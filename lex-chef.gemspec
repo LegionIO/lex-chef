@@ -8,15 +8,15 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'LEX::Chef'
   spec.description   = 'LEX::Chef'
-  spec.homepage      = 'https://bitbucket.org/legion-io/lex-chef'
+  spec.homepage      = 'https://github.com/LegionIO/lex-chef'
   spec.license       = 'MIT'
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
+  spec.required_ruby_version = '>= 3.4'
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://bitbucket.org/legion-io/lex-chef'
-  spec.metadata['documentation_uri'] = 'https://legionio.atlassian.net/wiki/spaces/LEX/pages/'
-  spec.metadata['changelog_uri'] = 'https://legionio.atlassian.net/wiki/spaces/LEX/pages/'
-  spec.metadata['bug_tracker_uri'] = 'https://bitbucket.org/legion-io/lex-chef/issues'
+  spec.metadata['source_code_uri'] = 'https://github.com/LegionIO/lex-chef'
+  spec.metadata['documentation_uri'] = 'https://github.com/LegionIO/lex-chef'
+  spec.metadata['changelog_uri'] = 'https://github.com/LegionIO/lex-chef'
+  spec.metadata['bug_tracker_uri'] = 'https://github.com/LegionIO/lex-chef/issues'
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
@@ -27,6 +27,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rubocop'
 
-  spec.add_dependency 'faraday'
+  spec.add_dependency 'faraday', '>= 2.0'
   spec.add_dependency 'faraday_middleware'
 end
