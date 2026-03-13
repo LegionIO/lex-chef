@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'lib/legion/extensions/chef/version'
 
 Gem::Specification.new do |spec|
@@ -17,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.metadata['documentation_uri'] = 'https://github.com/LegionIO/lex-chef'
   spec.metadata['changelog_uri'] = 'https://github.com/LegionIO/lex-chef'
   spec.metadata['bug_tracker_uri'] = 'https://github.com/LegionIO/lex-chef/issues'
+  spec.metadata['rubygems_mfa_required'] = 'true'
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end

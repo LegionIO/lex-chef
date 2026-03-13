@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'legion/extensions/chef/version'
 
 module Legion
