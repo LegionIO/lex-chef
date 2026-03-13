@@ -1,6 +1,6 @@
 # lex-chef
 
-Chef Server integration for [LegionIO](https://github.com/LegionIO/LegionIO). Queries and manages Chef resources including nodes, cookbooks, environments, roles, groups, policies, data bags, and search.
+Chef Server integration for [LegionIO](https://github.com/LegionIO/LegionIO). Queries and manages Chef resources including nodes, cookbooks, environments, roles, groups, policies, data bags, organizations, and search via the Chef Server API.
 
 ## Installation
 
@@ -8,16 +8,27 @@ Chef Server integration for [LegionIO](https://github.com/LegionIO/LegionIO). Qu
 gem install lex-chef
 ```
 
-## Functions
+Or add to your Gemfile:
 
-- **Node** - Chef node operations
-- **Cookbook** - Cookbook queries
-- **Environment** - Environment management
-- **Role** - Role queries
-- **Group** - Group management
-- **Policy** - Policy queries
-- **Data** - Data bag operations
-- **Search** - Chef search API
+```ruby
+gem 'lex-chef'
+```
+
+## Runners
+
+| Runner | Operations |
+|--------|-----------|
+| Node | list, get, add, update, delete |
+| Cookbook | queries |
+| Environment | management |
+| Role | queries |
+| Group | management |
+| Policy | queries |
+| Data | data bag operations |
+| License | license info |
+| Organization | organization management |
+| User | user management |
+| Search | Chef search API |
 
 ## Requirements
 
