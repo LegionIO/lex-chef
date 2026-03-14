@@ -1,6 +1,6 @@
 # lex-chef
 
-Chef Server integration for [LegionIO](https://github.com/LegionIO/LegionIO). Queries and manages Chef resources including nodes, cookbooks, environments, roles, groups, policies, data bags, organizations, and search via the Chef Server API.
+Chef Server integration for [LegionIO](https://github.com/LegionIO/LegionIO). Defines runners for querying and managing Chef resources including nodes, cookbooks, environments, roles, groups, policies, data bags, organizations, and search via the Chef Server API.
 
 ## Installation
 
@@ -14,21 +14,25 @@ Or add to your Gemfile:
 gem 'lex-chef'
 ```
 
+## Status
+
+This extension is partial. Runner modules and method signatures are defined but have empty method bodies. No HTTP client is wired up yet. Runner implementation using the `faraday` dependency is pending.
+
 ## Runners
 
-| Runner | Operations |
-|--------|-----------|
-| Node | list, get, add, update, delete |
-| Cookbook | queries |
-| Environment | management |
-| Role | queries |
-| Group | management |
-| Policy | queries |
-| Data | data bag operations |
-| License | license info |
-| Organization | organization management |
-| User | user management |
-| Search | Chef search API |
+| Runner | Defined Methods | Status |
+|--------|----------------|--------|
+| Node | list, get, add, update, delete | signatures only |
+| Cookbook | (none) | stub |
+| Environment | (none) | stub |
+| Role | (none) | stub |
+| Group | (none) | stub |
+| Policy | (none) | stub |
+| Data | (none) | stub |
+| License | (none) | stub |
+| Organization | list, get, create, delete, update | signatures only |
+| User | (none) | stub |
+| Search | (none) | stub |
 
 ## Requirements
 
