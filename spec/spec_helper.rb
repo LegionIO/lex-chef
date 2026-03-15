@@ -1,6 +1,21 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
+
+unless defined?(Legion::Extensions::Helpers::Lex)
+  module Legion
+    module Extensions
+      module Helpers
+        module Lex
+          def self.included(base)
+            base.extend base if base.instance_of?(Module)
+          end
+        end
+      end
+    end
+  end
+end
+
 require 'legion/extensions/chef'
 
 RSpec.configure do |config|
