@@ -3,3 +3,7 @@
 source 'https://rubygems.org'
 
 gemspec
+gem 'bundler', '>= 2'
+gem 'rake'
+gem 'rspec', '~> 3.0'
+gem 'rubocop'
