@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lex-chef (0.1.0)
+    lex-chef (0.2.0)
       faraday (>= 2.0)
 
 GEM
@@ -81,7 +81,7 @@ DEPENDENCIES
   bundler (>= 2)
   lex-chef!
   rake
-  rspec
+  rspec (~> 3.0)
   rubocop
 
 BUNDLED WITH
