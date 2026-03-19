@@ -67,7 +67,7 @@ client.get_cookbook(cookbook: 'nginx')
 
 ### Additional Runners (list and get only)
 
-The following runners have `list` and `get` implemented. `create`, `update`, and `delete` are pending.
+The following 9 runners have `list` and `get` implemented. `create`, `update`, and `delete` are pending.
 
 | Runner | Methods |
 |--------|---------|

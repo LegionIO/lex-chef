@@ -14,7 +14,7 @@ Legion Extension that connects to Chef Server APIs via Faraday. Defines runners 
 
 ## Status
 
-Implemented (v0.2.0). `Helpers::Client` wired up with Faraday and Chef Server auth headers. `Node` and `Organization` runners fully implemented with CRUD. Remaining 9 runners have `list` and `get` stubs. Standalone `Client` class includes all 12 runners.
+Implemented (v0.2.0). `Helpers::Client` wired up with Faraday and Chef Server auth headers. `Node` and `Organization` runners fully implemented with CRUD. Remaining 9 runners have `list` and `get` stubs. Standalone `Client` class includes all 11 runners.
 
 ## Architecture
 
@@ -31,11 +31,10 @@ Legion::Extensions::Chef
 │   ├── Data          # list, get stubs
 │   ├── License       # list, get stubs
 │   ├── User          # list, get stubs
-│   ├── Search        # list, get stubs
-│   └── [1 additional runner] # list, get stubs
+│   └── Search        # list, get stubs
 ├── Helpers/
 │   └── Client        # Faraday connection with Chef Server auth headers
-└── Client            # Standalone client class (includes all 12 runners)
+└── Client            # Standalone client class (includes all 11 runners)
 ```
 
 ## Key Files
