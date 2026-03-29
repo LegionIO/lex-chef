@@ -8,13 +8,13 @@
 
 Legion Extension that connects to Chef Server APIs via Faraday. Defines runners for querying and managing Chef resources including nodes, cookbooks, environments, roles, groups, policies, data bags, licenses, organizations, users, and search.
 
-**Version**: 0.2.0
+**Version**: 0.2.1
 **GitHub**: https://github.com/LegionIO/lex-chef
 **License**: MIT
 
 ## Status
 
-Implemented (v0.2.0). `Helpers::Client` wired up with Faraday and Chef Server auth headers. `Node` and `Organization` runners fully implemented with CRUD. Remaining 9 runners have `list` and `get` stubs. Standalone `Client` class includes all 11 runners.
+Implemented (v0.2.1). `Helpers::Client` wired up with Faraday and Chef Server auth headers. `Node` and `Organization` runners fully implemented with CRUD. Remaining 9 runners have `list` and `get` stubs. Standalone `Client` class includes all 11 runners. Legion sub-gems added as runtime dependencies at 0.2.1.
 
 ## Architecture
 
@@ -45,7 +45,7 @@ Legion::Extensions::Chef
 | `lib/legion/extensions/chef/runners/` | All Chef resource runners |
 | `lib/legion/extensions/chef/helpers/client.rb` | Faraday client with Chef Server auth headers |
 | `lib/legion/extensions/chef/client.rb` | Standalone `Client` class for use outside Legion framework |
-| `lib/legion/extensions/chef/version.rb` | Version constant (0.2.0) |
+| `lib/legion/extensions/chef/version.rb` | Version constant (0.2.1) |
 
 ## Dependencies
 
